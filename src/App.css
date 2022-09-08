@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+body,
+.homeSection,
+.cards {
+  overflow-x: hidden;
+}
+.navbar-brand img,
+.navbar form button,
+.introText button,
+.footer button,
+.footerlogo {
+  width: 170px;
+}
+.navbar {
+  padding: 25px;
+}
+.navbar,
+.introText p,
+.servicesHead h1,
+.servicesHead p,
+.cardDes,
+.cardTitle,
+.articleCard p {
+  font-weight: 400;
+}
+.navbar-nav {
+  margin-left: 23%;
+}
+.nav-link:hover {
+  text-decoration-line: underline;
+  text-decoration-color: hsl(136, 65%, 51%);
+  text-underline-offset: 20px;
+  text-decoration-thickness: 3px;
+}
+
+#toggleBtn,
+.acardTitle,
+.socialList li,
+.list li:hover {
+  cursor: pointer;
+}
+.nav-item,
+.socialList li {
+  padding: 0 10px;
+}
+.inviteBtn {
+  margin-right: 10%;
+}
+
+.navbar form button,
+.introText button,
+.footer button {
+  outline: none;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #31d35c,
+    #00d192,
+    #00cbbb,
+    #00c2d4,
+    #2bb7da
+  );
+  border-radius: 20px;
+  padding: 10px;
+}
+.navbar button:hover,
+.introText button:hover,
+.navbar form button,
+.introText button,
+.list li,
+.footer button,
+.footer button:hover {
+  color: #fff;
+}
+.homeSection {
+  grid-template-columns: 40% 60%;
+}
+.homeSection,
+.cards {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.introText {
+  flex-direction: column;
+  width: 70%;
+  transform: translate(40%, -40%);
+  padding: 10px;
+}
+.introText,
+.background {
+  display: flex;
+}
+.introText button,
+.homeSection,
+.cards,
+.footerDetails {
+  display: grid;
+}
+
+.introText h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.introText p {
+  margin-bottom: 25px;
+}
+.servicesHead p,
+.introText p {
+  font-size: 1.3rem;
+}
+.introText p,
+.cardDes,
+.servicesHead p,
+.articleCard p,
+.articleCard h6,
+.list li,
+.lastDiv p {
+  color: hsl(233, 8%, 62%);
+}
+.introImage {
+  width: 70%;
+  transform: translate(200px, -70px);
+}
+
+.background {
+  background-image: url("./images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 200px;
+  background-position-y: -200px;
+  justify-content: center;
+  align-items: center;
+}
+.acardTitle,
+.articleCard h6,
+.servicesHead p {
+  margin-bottom: 20px;
+}
+.articleCard h6,
+.servicesHead p,
+.cardDes {
+  font-weight: 300;
+}
+.servicesHead h1 {
+  margin-bottom: 30px;
+}
+.servicesHead p {
+  width: 47%;
+}
+.serviceCard,
+.articleCard {
+  border: none;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.cards {
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.cardImg {
+  height: 80px;
+  width: 80px;
+  margin-left: 6%;
+}
+.cardImg,
+.cardTitle {
+  margin-bottom: 13%;
+}
+.cardTitle {
+  font-size: 1.5rem;
+}
+
+.articleSection,
+.footer button,
+.footerDetails,
+.navbar-brand,
+.servicesSection {
+  margin-left: 10%;
+}
+
+.acardImg {
+  height: 250px;
+  width: 300px;
+}
+
+.articleCard p {
+  font-size: 1rem;
+}
+
+.acardTitle,
+.articleCard h6,
+.servicesHead p {
+  margin-bottom: 20px;
+}
+.acardTitle:hover,
+.list li:hover {
+  color: #31d35c;
+}
+
+.articleCard h6 {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 50px 0;
+}
+.footerDetails {
+  grid-template-columns: 20% 20% 10% 50%;
+}
+.socialList {
+  margin-top: 20%;
+  padding-left: 0;
+}
+.list li,
+.socialList {
+  list-style: none;
+}
+
+.socialList li {
+  display: inline-block;
+}
+.socialList li svg:hover path {
+  fill: #31d35c;
+}
+.list {
+  padding-top: 5px;
+}
+.list li {
+  padding-bottom: 20px;
+}
+
+.footer button {
+  margin-bottom: 0.6%;
+}
+
+.lastDiv {
+  margin-left: 40%;
+}
+
+.lastDiv p {
+  padding-top: 50px;
+}
+#click,
+.copyright,
+.mobileH,
+.listM {
+  display: none;
+}
+.copyright,
+.mobileH,
+.listM {
+  visibility: hidden;
+}
+@media only screen and (max-width: 1300px) {
+  .navbar-nav {
+    margin-left: 43%;
+    margin-top: 5%;
+  }
+  .navbar form button {
+    display: none;
+  }
+  .inviteBtn {
+    margin-left: 5%;
+  }
+  #click + label {
+    content: url(./images/icon-hamburger.svg);
+    cursor: pointer;
+  }
+  #click:checked + label {
+    content: url(./images/icon-close.svg);
+  }
+  #click:not(:hover),
+  .navbar-toggler,
+  #click + label {
+    outline: none;
+    border: none;
+  }
+  .introImage {
+    width: 70%;
+    transform: translate(140px, -80px);
+  }
+  .introText h1 {
+    font-size: 2rem;
+  }
+  .introText,
+  .background,
+  .copyright {
+    display: flex;
+  }
+  .introText {
+    flex-direction: column;
+    width: 70%;
+    transform: translate(40%, -0%);
+    padding: 10px;
+  }
+  .introText p {
+    font-size: 1rem;
+  }
+  .background {
+    background-position-x: 100px;
+    background-position-y: -100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    grid-template-columns: 50% 50%;
+  }
+  .servicesHead h1 {
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+  .servicesHead p {
+    font-size: 1.1rem;
+    width: 70%;
+  }
+
+  .serviceCard,
+  .articleCard {
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+  }
+  .cardImg {
+    margin-bottom: 10%;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10%;
+  }
+  .articleSection h1 {
+    margin-top: 4%;
+  }
+  .articleSection {
+    margin-bottom: 5%;
+  }
+  .footerDetails {
+    grid-template-columns: 25% 25% 15% 20%;
+    margin-bottom: 0;
+  }
+  .footerlogo {
+    width: 150px;
+  }
+  .socialList {
+    margin-top: 25%;
+  }
+  .socialList li {
+    padding: 0 5px;
+  }
+  .list {
+    padding-top: 0px;
+  }
+  .list li {
+    padding-bottom: 10px;
+  }
+
+  .lastDiv p {
+    visibility: hidden;
+  }
+  .copyright {
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+  }
+  .copyright p {
+    color: hsl(233, 8%, 62%);
+  }
+  .footer button {
+    margin-bottom: 0%;
+    margin-top: 12%;
+  }
+  .mobileH {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar-brand {
+    margin-left: 0%;
+  }
+  .nav-link:hover {
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+  }
+  .nav-item {
+    margin-left: 0%;
+  }
+  #click:not(:hover),
+  .navbar-toggler,
+  #click + label {
+    outline: none;
+    border: none;
+  }
+  #click + label {
+    content: url(./images/icon-hamburger.svg);
+    cursor: pointer;
+  }
+  #click:checked + label {
+    content: url(./images/icon-close.svg);
+  }
+  .navbar-nav {
+    position: absolute;
+    z-index: 999;
+    margin-top: 10%;
+    width: 80vw;
+    background-color: #fff;
+    margin-left: 0;
+    height: 24vh;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .navbar form button,
+  .deskH,
+  .listD {
+    display: none;
+  }
+  .homeSection {
+    display: block;
+  }
+  .introText {
+    transform: translate(0%, -0%);
+    text-align: center;
+    margin-left: 15%;
+  }
+
+  .introText h1 {
+    font-size: 2rem;
+  }
+  .introText p {
+    font-size: 1.1rem;
+  }
+  .introImage {
+    width: 80%;
+    transform: translate(0px, -50px);
+  }
+  .introText button {
+    margin-left: 20%;
+  }
+  .mobileH {
+    display: block;
+    visibility: visible;
+  }
+  .deskH {
+    visibility: hidden;
+  }
+  .background {
+    background-image: url("./images/bg-intro-mobile.svg");
+    background-position-x: 0px;
+    background-position-y: -45px;
+  }
+  .servicesSection {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+  }
+  .servicesHead h1 {
+    margin-top: 10%;
+  }
+  .servicesHead p {
+    margin-left: 15%;
+  }
+  .cards {
+    display: block;
+    margin-left: 22%;
+    text-align: center;
+  }
+  .cardImg {
+    margin-left: 29%;
+    margin-bottom: 0;
+    margin-top: 2%;
+
+  }
+  .articleSection {
+    margin-left: 0%;
+    text-align: center;
+  }
+  .acardImg {
+    height: 220px;
+    width: 280px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footerDetails {
+    margin-left: 0%;
+    grid-template-columns: 100%;
+  }
+  .footerlogo {
+    width: 200px;
+  }
+  .socialList {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  .socialList li {
+    padding: 0 20px;
+  }
+  .listM {
+    visibility: visible;
+    display: block;
+  }
+  .listD {
+    visibility: hidden;
+  }
+  .list {
+    padding-top: 30px;
+  }
+  .lastDiv {
+    margin-left: 0%;
+  }
+  .copyright {
+    visibility: visible;
+    display: block;
+    margin-left: 9%;
+  }
+}
